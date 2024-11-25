@@ -1,0 +1,101 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('flower.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.task-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.task-input input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.task-input input[type="datetime-local"] {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.task-input button:hover {
+    background-color: #555;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.task-item.completed {
+    background: #d4edda;
+    text-decoration: line-through;
+}
+
+.task-item button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.task-item button.edit {
+    color: #007bff;
+}
+
+.task-item button.delete {
+    color: #dc3545;
+}
+
+.task-item button.complete {
+    color: #28a745;
+}
